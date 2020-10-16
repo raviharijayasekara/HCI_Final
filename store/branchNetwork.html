@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Store Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+	<!--fonr awesome library---->
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/IT18136234_kaveetha_css/aboutUs.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<style>
+		.grid-container {
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+		
+			padding: 10px;
+		}
+
+		.grid-item {
+			background-color: rgba(255, 255, 255, 0.8);
+			border: 1px solid rgba(0, 0, 0, 0.8);
+			padding: 20px;
+			font-size: 30px;
+			text-align: center;
+			
+		}
+
+		.collapsible {
+			background-color: rgb(124, 124, 124);
+			color: white;
+			cursor: pointer;
+			padding: 20px;
+			
+			width: 85%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+		}
+
+		.active,
+		.collapsible:hover {
+			background-color: rgb(27, 22, 77);
+		}
+
+		.content {
+			padding: 18px;
+			display: none;
+			overflow: hidden;
+			background-color: #f1f1f1;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-2">
+							<div id="colorlib-logo"><a href="index.html">Sarasavi Bookshop</a></div>
+						</div>
+						<div class="col-xs-10 text-right menu-1">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li class="has-dropdown">
+									<a href="shop.html">Shop</a>
+									<ul class="dropdown">
+										<li><a href="product-detail.html">Product Detail</a></li>
+										<li><a href="cart.html">Shipping Cart</a></li>
+										<li><a href="checkout.html">Checkout</a></li>
+										<li><a href="order-complete.html">Order Complete</a></li>
+										<li><a href="add-to-wishlist.html">Wishlist</a></li>
+									</ul>
+								</li>
+								<li class="has-dropdown">
+									<a href="blog.html">Category</a>
+									<ul class="dropdown">
+										<li><a href="catalogue.html">Catalogue
+											</a></li>
+										<li><a href="cart.html">ස්වර්ණ පුස්තක</a></li>
+										<li><a href="sarasaviPublications.html">Sarasavi Publications</a></li>
+										<li><a href="sinhalaBook.html">Sinhala Books</a></li>
+										<li><a href="englishBook.html">English Books</a></li>
+										<li><a href="newArraivals.html">New Arrivals</a></li>
+									</ul>
+								</li>
+								<li class="has-dropdown">
+									<a href="blog.html">Kaushalya</a>
+									<ul class="dropdown">
+										<li><a href="discountedBooks.html">Discounted Books
+											</a></li>
+										<li><a href="voucherPage.html">Voucher Page</a></li>
+										<li><a href="quotation.html">Quotation</a></li>
+										<li><a href="accountSettings.html">Account Settings</a></li>
+
+									</ul>
+								</li>
+								<li class="has-dropdown">
+									<a href="blog.html">footer items</a>
+									<ul class="dropdown">
+										<li><a href="privacyPolicy.html">Privacy Policy
+											</a></li>
+										<li><a href="termsofService.html">Terms of Service</a></li>
+										<li><a href="branchNetwork.html">Branch Network</a></li>
+
+									</ul>
+								</li>
+								<li class="active"><a href="about.html">About</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart [0]</a></li>
+
+								<li><a href="add-to-wishlist.html"><svg width="1em" height="1em" viewBox="0 0 16 16"
+											class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd"
+												d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+										</svg></a></li>
+								<li><a href="signUp.html"><svg width="1em" height="1em" viewBox="0 0 16 16"
+											class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd"
+												d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+										</svg></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Breadcrumbs -->
+		<div class=Breadcrumbs>
+			<p><a href="index.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door-fill"
+						fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z" />
+						<path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+						<a href="index.html"></svg></a>
+				<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-right-fill" fill="currentColor"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+					</svg>
+				<a href="about.html">About Us</a></li>
+			</p>
+		</div>
+		<!-- End Breadcrumbs -->
+
+		<div id="colorlib-about">
+			<div class="container">
+				<div class="row">
+					<div class="about-flex">
+						<h1>About Sarasavi Bookshop</h1>
+						<div class="col-three-forth">
+							<h2 class="background"><span>Company Profile</span></h2>
+							<div class="row">
+								<div class="col-md-12" style="text-indent: 6px;">
+									<div class="grid-container">
+										<div class="collapsible" class="grid-item"><p>Nugegoda Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Kollupitiya Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Boralla Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Maharagama Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Horana Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Kandy City Center Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Rathnapura Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Wattala Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Mathara Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Padukka Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Palawaththa Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Narahenpita Fort Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Dehiwala Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Piliyandala Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Kandy Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Kurunegala Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Gampaha Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Kiribathgoda Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Galle Branch</p><p>0778240756</p></div>
+										<div class="collapsible" class="grid-item"><p>Sarasavi Warehouse Branch</p><p>0778240756</p></div>
+																				
+									</div>
+								</div>
+							</div>
+						<br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!------------------------------------------------News Letter-------------------------------------------------->
+		<div id="colorlib-subscribe">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="col-md-6 text-center">
+							<h2><i class="icon-paperplane"></i>Sign Up for a Newsletter</h2>
+						</div>
+						<div class="col-md-6">
+							<form class="form-inline qbstp-header-subscribe">
+								<div class="row">
+									<div class="col-md-12 col-md-offset-0">
+										<div class="form-group">
+											<input type="text" class="form-control" id="email"
+												placeholder="Enter your email">
+											<button type="submit" class="btn btn-primary">Subscribe</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------------------------------------------FOOTER------------------------------------------------------------->
+		<footer id="colorlib-footer" role="contentinfo">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-3 colorlib-widget">
+						<h4>About Store</h4>
+						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta
+							adipisci architecto culpa amet.</p>
+						<p>
+						<ul class="colorlib-social-icons">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+						</p>
+					</div>
+					<div class="col-md-2 colorlib-widget">
+						<h4>Customer Care</h4>
+						<p>
+						<ul class="colorlib-footer-links">
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Returns/Exchange</a></li>
+							<li><a href="#">Gift Voucher</a></li>
+							<li><a href="#">Wishlist</a></li>
+							<li><a href="#">Special</a></li>
+							<li><a href="#">Customer Services</a></li>
+							<li><a href="#">Site maps</a></li>
+						</ul>
+						</p>
+					</div>
+					<div class="col-md-2 colorlib-widget">
+						<h4>Information</h4>
+						<p>
+						<ul class="colorlib-footer-links">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Delivery Information</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Order Tracking</a></li>
+						</ul>
+						</p>
+					</div>
+
+					<div class="col-md-2">
+						<h4>News</h4>
+						<ul class="colorlib-footer-links">
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Exhibitions</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3">
+						<h4>Contact Information</h4>
+						<ul class="colorlib-footer-links">
+							<li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
+							<li><a href="tel://1234567920">+ 1235 2355 98</a></li>
+							<li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+							<li><a href="#">yoursite.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copy">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>
+							<span class="block">
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;
+								<script>document.write(new Date().getFullYear());</script> All rights reserved | This
+								template is made with <i class="icon-heart2" aria-hidden="true"></i> by <a
+									href="https://colorlib.com" target="_blank">Colorlib</a>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+							<span class="block">Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a>
+								, <a href="http://pexels.com/" target="_blank">Pexels.com</a></span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Date Picker -->
+	<script src="js/bootstrap-datepicker.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	</script>
+
+</body>
+
+</html>
