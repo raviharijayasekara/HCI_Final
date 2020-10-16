@@ -22,9 +22,14 @@
 	<meta name="twitter:card" content="" />
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+<!-- Animate.css -->
+<link rel="stylesheet" href="css/animate.css">
+<!--font awesome library---->
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
@@ -62,29 +67,24 @@
 	<div class="colorlib-loader"></div>
 
 	<div id="page">
-		<div id="page">
+		
 			<nav class="colorlib-nav" role="navigation">
+				<div class="row">
+					<div class="colLogo" id="colorlib-logo">
+						<img id="im" style="padding-left: 50px; padding-top: 20px; padding-bottom: 20px;" src="images/sarasavi.jpeg"alt="January_Catalogue"><a href="index.html">
+							
+						</a>
+					</div>
+					
+				</div>
 				<div class="top-menu">
 					<div class="container">
-						<div class="row">
-							<div class="col-xs-2">
-								<div id="colorlib-logo"><a href="index.html">Sarasavi Bookshop</a></div>
-							</div>
-							<div class="col-xs-10 text-right menu-1">
+						<div class="row">						
+							<div class="col-md-12 text-right menu-1">
 								<ul>
-									<li class="active"><a href="index.html">Home</a></li>
-									<li class="has-dropdown">
-										<a href="shop.html">Shop</a>
-										<ul class="dropdown">
-											<li><a href="product-detail.html">Product Detail</a></li>
-											<li><a href="cart.html">Shipping Cart</a></li>
-											<li><a href="checkout.html">Checkout</a></li>
-											<li><a href="order-complete.html">Order Complete</a></li>
-											<li><a href="add-to-wishlist.html">Wishlist</a></li>
-										</ul>
-									</li>
-									<li class="has-dropdown">
-										<a href="blog.html">Category</a>
+									<li ><a href="index.html">Home</a></li>
+									<li class="has-dropdown " >
+										<a href="#" style="color: white;">Category</a>
 										<ul class="dropdown">
 											<li><a href="catalogue.html">Catalogue
 												</a></li>
@@ -93,45 +93,42 @@
 											<li><a href="sinhalaBook.html">Sinhala Books</a></li>
 											<li><a href="englishBook.html">English Books</a></li>
 											<li><a href="newArraivals.html">New Arrivals</a></li>
+											<li><a href="discountedBooks.html">Discounted Books</a></li>
+											<li><a href="voucherPage.html">Gift Vouchers</a></li>
 										</ul>
 									</li>
-									<li class="has-dropdown">
-										<a href="blog.html">Kaushalya</a>
-										<ul class="dropdown">
-											<li><a href="discountedBooks.html">Discounted Books
-												</a></li>
-											<li><a href="voucherPage.html">Voucher Page</a></li>
-											<li><a href="quotation.html">Quotation</a></li>
-											<li><a href="accountSettings.html">Account Settings</a></li>
-
-										</ul>
+									<li><a href="about.html">About Us</a></li>
+									
+									<li>
+										<a href="#NEWSLETTER" data-toggle="modal" data-target="#NEWSLETTER">Newsletter</a>
 									</li>
-									<li class="has-dropdown">
-										<a href="blog.html">footer items</a>
-										<ul class="dropdown">
-											<li><a href="privacyPolicy.html">Privacy Policy
-												</a></li>
-											<li><a href="termsofService.html">Terms of Service</a></li>
-											<li><a href="branchNetwork.html">Branch Network</a></li>
-
-										</ul>
+								
+									<li><a href="#exampleModalCenter" data-toggle="modal">Contact</a></li>
+									
+									<li>
+											<input style="width:50%; border-radius: 20px;"type="text" placeholder=" Search.." class="fa fa-search" >
+										
 									</li>
-									<li><a href="about.html">About</a></li>
-									<li><a href="contact.html">Contact</a></li>
-									<li><a href="cart.html"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
-
-									<li><a href="add-to-wishlist.html"><svg width="1em" height="1em" viewBox="0 0 16 16"
-												class="bi bi-heart" fill="currentColor"
-												xmlns="http://www.w3.org/2000/svg">
+									<li><a href="cart.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+									  </svg></a></li>
+	
+									<li style="color: white;"><a href="add-to-wishlist.html"><svg width="1em" height="1em" viewBox="0 0 16 16"
+												class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 												<path fill-rule="evenodd"
 													d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
 											</svg></a></li>
-									<li><a href="signUp.html"><svg width="1em" height="1em" viewBox="0 0 16 16"
-												class="bi bi-person" fill="currentColor"
-												xmlns="http://www.w3.org/2000/svg">
-												<path fill-rule="evenodd"
-													d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-											</svg></a></li>
+									
+										<li class="has-dropdown"><a href="#"  data-toggle="modal"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+										  </svg></a>
+											  <ul class="dropdown">
+												<li><a href="#LOGIIN" data-toggle="modal">Sign In</a></li>
+												<li><a href="signUp.html">Sign Up</a></li>
+												<li><a href="accountSettings.html">Account Settings</a></li>
+											</ul>
+										</li>
+									</a></li>
 								</ul>
 							</div>
 						</div>
@@ -139,7 +136,7 @@
 				</div>
 			</nav>
 	<!-- Breadcrumbs -->
-	<div class=Breadcrumbs>
+	<div class=Breadcrumbs style="padding-left: 100px; padding-top: 20px;">
 		<p><a href="index.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 				<path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
 				<path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
@@ -361,109 +358,60 @@
 			</div>
 		</div>
 
-		<div id="colorlib-subscribe">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<div class="col-md-6 text-center">
-							<h2><i class="icon-paperplane"></i>Sign Up for a Newsletter</h2>
-						</div>
-						<div class="col-md-6">
-							<form class="form-inline qbstp-header-subscribe">
-								<div class="row">
-									<div class="col-md-12 col-md-offset-0">
-										<div class="form-group">
-											<input type="text" class="form-control" id="email"
-												placeholder="Enter your email">
-											<button type="submit" class="btn btn-primary">Subscribe</button>
-										</div>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<footer id="colorlib-footer" role="contentinfo">
+		<footer id="colorlib-footer" role="contentinfo" style="background-color: #03254c;">
 			<div class="container">
 				<div class="row row-pb-md">
-					<div class="col-md-3 colorlib-widget">
-						<h4>About Store</h4>
-						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta
-							adipisci architecto culpa amet.</p>
-						<p>
-						<ul class="colorlib-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-						</p>
+					<div class="col colorlib-widget" style="color: white;">
+						<h4 style="font-size: 25px; color: white;">About Us</h4>
+						<p>Sarasavi.lk is a website for an extensive collection of books, stationery and magazines.
+							Not only a “one-stop shop” for book lovers but also an interactive and innovative destination
+							 designed to make it fun and exciting to discover and shop for new books and gifts online.</p>
+						
 					</div>
-					<div class="col-md-2 colorlib-widget">
-						<h4>Customer Care</h4>
-						<p>
-						<ul class="colorlib-footer-links">
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Returns/Exchange</a></li>
-							<li><a href="#">Gift Voucher</a></li>
-							<li><a href="#">Wishlist</a></li>
-							<li><a href="#">Special</a></li>
-							<li><a href="#">Customer Services</a></li>
-							<li><a href="#">Site maps</a></li>
-						</ul>
-						</p>
-					</div>
-					<div class="col-md-2 colorlib-widget">
-						<h4>Information</h4>
-						<p>
-						<ul class="colorlib-footer-links">
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Delivery Information</a></li>
-							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">Support</a></li>
-							<li><a href="#">Order Tracking</a></li>
-						</ul>
+
+					<div class="col colorlib-widget" style="padding-left: 150px; color: white;">
+						<h4  style="font-size: 25px; color: white;">Information</h4>
+						<p  style="color: white;">
+							<ul class="colorlib-footer-links"  style="color: white;">
+								<li ><a href="about.html" style="color: white;">About us</a></li>
+								<li><a href="privacyPolicy.html" style="color: white;">Privacy Policy</a></li>
+								<li><a href="branchNetwork.html" style="color: white;">Branch Network</a></li>
+								<li><a href="termsofService.html" style="color: white;">Terms of Service</a></li>
+							</ul>
 						</p>
 					</div>
 
-					<div class="col-md-2">
-						<h4>News</h4>
+					<div class="col"  style="color: white;">
+						<h4 style="font-size: 25px; color: white;">Contact Us</h4>
 						<ul class="colorlib-footer-links">
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="#">Press</a></li>
-							<li><a href="#">Exhibitions</a></li>
-						</ul>
-					</div>
-
-					<div class="col-md-3">
-						<h4>Contact Information</h4>
-						<ul class="colorlib-footer-links">
-							<li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
-							<li><a href="tel://1234567920">+ 1235 2355 98</a></li>
-							<li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-							<li><a href="#">yoursite.com</a></li>
+							<li>Follow us on social networks</li>	
+								<a href="https://www.facebook.com/sarasavibooks/"><i class="fab  fa-twitter-square" style="padding-left: 10px; font-size: 30px; color: white; padding-bottom: 10px;"></i></a>
+								<a href="https://twitter.com/sarasavibooks"><i class="fab fa-facebook-square"  style="padding-left: 10px; font-size: 30px; color: white;"></i></a>
+								<a href="https://www.youtube.com/channel/UCUjZNSutD2ik5h-1-vnftuQ/videos"><i class="fab  fa-youtube" style="padding-left: 10px; font-size: 35px; color: white; "></i></a>	
+							<li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+							  </svg>  webadmin@sarasavi.lk</li>
+							<li> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+							  </svg>  (+94) 711 30 40 50 , (+94) 11 2820820</li>
+							<li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+							  </svg>  Monday - Friday : 9.30 am to 5.00 pm</li>
+							<li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+							  </svg>  Saturday : 9.30 am to 1.00 pm</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="copy">
 				<div class="row">
-					<div class="col-md-12 text-center">
+					<div class="col-md-12 text-center " style="color: white;">
 						<p>
-
-							<span class="block">
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-								Copyright &copy;
-								<script>document.write(new Date().getFullYear());</script> All rights reserved | This
-								template is made with <i class="icon-heart2" aria-hidden="true"></i> by <a
-									href="https://colorlib.com" target="_blank">Colorlib</a>
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
-							<span class="block">Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a>
-								, <a href="http://pexels.com/" target="_blank">Pexels.com</a></span>
+							<hr style="width: 85%;">
+							<span class="block" style="background-color: #03254c;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  Sarasavi Bookshop (pvt) Ltd  by 
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span> 
 						</p>
 					</div>
 				</div>
@@ -472,7 +420,7 @@
 	</div>
 
 	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+		<a href="#" class="js-gotop" style="background-color: white; color: #03254c;"><i class="fa fa-arrow-up" ></i></a>
 	</div>
 	<!-- Modal -->
 	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"

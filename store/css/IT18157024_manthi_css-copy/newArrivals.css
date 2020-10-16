@@ -78,8 +78,7 @@
       margin: 0; } }
   
   .colorlib-nav .top-menu {
-    padding: 20px 30px; 
-    background: #0c386b;}
+    padding: 40px 30px; }
     @media screen and (max-width: 768px) {
       .colorlib-nav .top-menu {
         padding: 28px 1em; } }

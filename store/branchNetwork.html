@@ -56,11 +56,41 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!--font awesome library---->
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
 	<style>
 		.grid-container {
 			display: grid;
 			grid-template-columns: auto auto auto auto;
-		
+
 			padding: 10px;
 		}
 
@@ -70,7 +100,7 @@
 			padding: 20px;
 			font-size: 30px;
 			text-align: center;
-			
+
 		}
 
 		.collapsible {
@@ -78,7 +108,7 @@
 			color: white;
 			cursor: pointer;
 			padding: 20px;
-			
+
 			width: 85%;
 			border: none;
 			text-align: left;
@@ -100,83 +130,225 @@
 	</style>
 </head>
 
+
 <body>
+
+
 
 	<div id="page">
 		<nav class="colorlib-nav" role="navigation">
+			<div class="row">
+				<div class="colLogo" id="colorlib-logo">
+					<img id="im" style="padding-left: 50px; padding-top: 20px; padding-bottom: 20px;" src="images/sarasavi.png"alt="January_Catalogue"><a href="index.html">
+						
+					</a>
+				</div>
+				
+			</div>
 			<div class="top-menu">
 				<div class="container">
-					<div class="row">
-						<div class="col-xs-2">
-							<div id="colorlib-logo"><a href="index.html">Sarasavi Bookshop</a></div>
-						</div>
-						<div class="col-xs-10 text-right menu-1">
+					<div class="row">						
+						<div class="col-md-12 text-right menu-1">
 							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li class="has-dropdown">
-									<a href="shop.html">Shop</a>
-									<ul class="dropdown">
-										<li><a href="product-detail.html">Product Detail</a></li>
-										<li><a href="cart.html">Shipping Cart</a></li>
-										<li><a href="checkout.html">Checkout</a></li>
-										<li><a href="order-complete.html">Order Complete</a></li>
-										<li><a href="add-to-wishlist.html">Wishlist</a></li>
-									</ul>
-								</li>
-								<li class="has-dropdown">
-									<a href="blog.html">Category</a>
-									<ul class="dropdown">
-										<li><a href="catalogue.html">Catalogue
-											</a></li>
-										<li><a href="cart.html">ස්වර්ණ පුස්තක</a></li>
-										<li><a href="sarasaviPublications.html">Sarasavi Publications</a></li>
-										<li><a href="sinhalaBook.html">Sinhala Books</a></li>
-										<li><a href="englishBook.html">English Books</a></li>
-										<li><a href="newArraivals.html">New Arrivals</a></li>
-									</ul>
-								</li>
-								<li class="has-dropdown">
-									<a href="blog.html">Kaushalya</a>
-									<ul class="dropdown">
-										<li><a href="discountedBooks.html">Discounted Books
-											</a></li>
-										<li><a href="voucherPage.html">Voucher Page</a></li>
-										<li><a href="quotation.html">Quotation</a></li>
-										<li><a href="accountSettings.html">Account Settings</a></li>
+								<li class="active"><a href="index.html">Home</a></li>
 
-									</ul>
+								<li><a href="about.html">About Us</a></li>
+								<li>
+									<a href="#NEWSLETTER" data-toggle="modal" data-target="#NEWSLETTER">Newsletter</a>
 								</li>
-								<li class="has-dropdown">
-									<a href="blog.html">footer items</a>
-									<ul class="dropdown">
-										<li><a href="privacyPolicy.html">Privacy Policy
-											</a></li>
-										<li><a href="termsofService.html">Terms of Service</a></li>
-										<li><a href="branchNetwork.html">Branch Network</a></li>
+							
+								<li><a href="#exampleModalCenter" data-toggle="modal">Contact</a></li>
+								
 
-									</ul>
+								
+								<li>
+										<input style="width:50%; border-radius: 20px;"type="text" placeholder="Search.." class="fa fa-search" >
+									
 								</li>
-								<li class="active"><a href="about.html">About</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart [0]</a></li>
+								<li><a href="cart.html"><i class="icon-shopping-cart"></i></a></li>
 
 								<li><a href="add-to-wishlist.html"><svg width="1em" height="1em" viewBox="0 0 16 16"
 											class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 											<path fill-rule="evenodd"
 												d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
 										</svg></a></li>
-								<li><a href="signUp.html"><svg width="1em" height="1em" viewBox="0 0 16 16"
-											class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd"
-												d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-										</svg></a></li>
+								
+									<li><a href="#LOGIIN"  data-toggle="modal"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+									  </svg></a></li>
+								</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</nav>
+		<!-- Modal contact -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+			aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle" style="font-family: Bahnschrift;">
+							<b>Contact</b></h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ul class="nav navbar-nav navbar-right">
+							<li> <strong>
+									<h5 class="text-center my-4">Sarasavi Bookshop(pvt)Ltd</h5>
+								</strong></li>
+							<li>
+								<p class="lead my-2 text-center" style="font-family: Biome Light;">TEl : (+94) 112802802
+								</p>
+							</li>
+							<li>
+								<p class="lead my-2 text-center" style="font-family: Biome Light"> webadmin@Sarasavi.lk
+								</p>
+							</li>
+							<li>
+								<p class="lead my-2 text-center" style="font-family: Biome Light;">Main Shop :</p>
+							</li>
+							<li>
+								<p class="lead my-2 text-center" style="font-family: Biome Light;">Monday 9.30 AM 5 PM
+								</p>
+							</li>
+							<li>
+								<p class="lead my-2 text-center" style="font-family: Biome Light;">Saturday 9.30 AM 1 PM
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="modal-footer justify-content-center">
+						<a href="./contactUs.html"> <button type="button " class="btn"
+								style="background-color: #1664a2; color: white;">Leave Your Message</button> </a>
 
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end Modal contact -->
+		<!-- Modal LOGIN -->
+		<div class="modal fade" id="LOGIIN" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+			aria-hidden="true">
+			<div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+				<div class="modal-content ">
+					<div class="modal-header">
+						<br>
+						<h2 class="text-center my-2 mx-5"
+							style="font-family: 'Gabriola', Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+							<b>Welcome to the Profile..</b></h2>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body justify-content-center">
+						<ul class="nav navbar-nav navbar-right">
+
+							<li> <strong>
+									<h5 class=" my-2 mx-5" style="font-family: 'Bahnschrift', 'Arial Narrow', Arial, sans-serif;">Join With Us..</h5>
+								</strong>
+							</li>
+							<li>
+								<form>
+									<div class="form-group mx-5">
+										<input type="text" class="form-control" placeholder="E-Mail Address" id="email">
+										<div style="color: red;" id="name"> </div>
+									</div>
+									<div class="form-group mx-5">
+										<input type="password" class="form-control" placeholder="Password"
+											id="recipient-pass">
+										<div style="color: red;" id="pass"> </div>
+									</div>
+								</form>
+							</li>
+							<li> <a href="./forgetYourPassword-new.html" class=" text-dark"
+									style="font-family: 'Gabriola', 'Arial Narrow', Arial, sans-serif; ">
+									<h3 class="mx-5"> <b>Forgot your Password ? </b></h3>
+								</a></li>
+						</ul>
+					</div>
+					<div class="modal-footer" style="margin-right: 40px;">
+
+						<img src="images/settings.png"
+						width="5%" class="img-fluid mx-auto" alt="Responsive image">
+
+
+						<button type="button " class="btn "
+							style="width: 20%;margin-right: 40px; background-color: #1664a2;  color: white; "
+							onclick="validation()">Sing In </button>
+						<button type="button " class="btn "
+							style="width: 20%;margin-right: 40px; background-color: #1664a2; "><a href="./signUp.html"
+								style="color: white;"> Sing Up </a> </button>
+								
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Modal LOGIIN -->
+		<!-- Modal NEWS Letter -->
+		<div class="modal fade" id="NEWSLETTER" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content ">
+					<div class="modal-header">
+						<strong>
+							<h5 class="text-center my-4" style="font-family: Bahnschrift"><b>News Letter</b></h5>
+						</strong>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body justify-content-center">
+						<ul class="nav navbar-nav navbar-right">
+							<img src="https://seeklogo.com/images/S/sarasavi-book-shop-logo-849DCED3EE-seeklogo.com.png"
+								width="50%" class="img-fluid mx-auto" alt="Responsive image">
+							<li> <strong>
+									<h5 class="text-center my-4" style="font-family: Biome Light;">The Sarasavi
+										Bookstore Newsletter</h5>
+								</strong></li>
+							<li>
+								<p class="lead my-2 text-center" style="font-family: Biome Light; font-size: 15px;">
+									Confirm Your Subscription</p>
+							</li>
+							<a href="./indexsarasavi.html"> <button type="button"
+									style=" padding: 5px; width: 200px; margin-left: 140px; background-color: #000080; color: white;"
+									class="btn  text-center my-3">Yes, I want to Subscribe.</button> </a>
+							<!-- Modal NEWS Letter fill rest of content  in 1 p  -->
+							<li>
+								<p class="lead my-3 text-center" style="font-family: Biome Light; font-size: 16px;">
+									<b>If you didn't subscribe to this list or you're not sure why
+										you received this mail, you can delete it. You will not be subscribed if you
+										don't click on the link above. if you have any questions, you can contact
+										us.</b></p>
+							</li>
+							<!-- Modal NEWS Letter fill rest of content  in 2 p  with link -->
+							<li>
+								<p class="lead my-2 text-center" style="font-family: Arial; font-size: 15px;">Thank you!
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
 		<!-- Breadcrumbs -->
 		<div class=Breadcrumbs>
 			<p><a href="index.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door-fill"
@@ -189,47 +361,774 @@
 					xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-					</svg>
-				<a href="about.html">About Us</a></li>
+				</svg>
+				<a href="branchNetwork.html">Branch Network</a></li>
 			</p>
 		</div>
 		<!-- End Breadcrumbs -->
-
+		
+			
+			
 		<div id="colorlib-about">
 			<div class="container">
 				<div class="row">
-					<div class="about-flex">
-						<h1>About Sarasavi Bookshop</h1>
-						<div class="col-three-forth">
-							<h2 class="background"><span>Company Profile</span></h2>
+					<div >
+						<h2 class="background"><span>Branch Network</span></h2>
+						<div class="col-three-forth"></div>
+							
 							<div class="row">
 								<div class="col-md-12" style="text-indent: 6px;">
 									<div class="grid-container">
-										<div class="collapsible" class="grid-item"><p>Nugegoda Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Kollupitiya Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Boralla Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Maharagama Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Horana Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Kandy City Center Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Rathnapura Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Wattala Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Mathara Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Padukka Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Palawaththa Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Narahenpita Fort Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Dehiwala Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Piliyandala Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Kandy Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Kurunegala Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Gampaha Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Kiribathgoda Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Galle Branch</p><p>0778240756</p></div>
-										<div class="collapsible" class="grid-item"><p>Sarasavi Warehouse Branch</p><p>0778240756</p></div>
-																				
+										<div class="collapsible" class="grid-item">
+											<p>Nugegoda Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Nugegoda">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Nugegoda" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															No. 02 Stanley Tilakaratne Mawatha, Nugegoda 10250
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.167851718579!2d79.88670631426758!3d6.870481320939585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a44519ea531%3A0xff591fc5c752dea3!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602847630969!5m2!1sen!2slk"
+															width="550" height="700" frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Kollupitiya Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Kollupitiya">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Kollupitiya" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															147 St Michaels Rd, Colombo 00700
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.219792827065!2d79.8527553!3d6.9139097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3a74825bd80211cf!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602857227917!5m2!1sen!2slk"
+															width="550" height="700" frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Boralla Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Boralla">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Boralla" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															147 St Michaels Rd, Colombo 00700
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.219792827065!2d79.8527553!3d6.9139097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3a74825bd80211cf!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602857227917!5m2!1sen!2slk"
+															width="550" height="700" frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Maharagama Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Maharagama">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Maharagama" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															74 High Level Rd, Maharagama 10280
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15845.47396707057!2d79.9277188!3d6.8463532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd7adb090c01d37a8!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602858217472!5m2!1sen!2slk"
+															width="550" height="700" frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Horana Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Horana">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Horana" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															41 Anguruwathota Rd, Horana
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15849.748584101897!2d80.0619975!3d6.7163882!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb818eb91bf078ee6!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602858252756!5m2!1sen!2slk"
+															width="550" height="700"  frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Kandy City Center Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#City">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="City" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Block 21, Level 2, Kandy City Center
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15830.18744771775!2d80.6368194!3d7.2922833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x29c6fe84f9635fee!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602858293068!5m2!1sen!2slk"
+															width="550" height="700"  frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Rathnapura Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Rathnapura">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Rathnapura" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															1st floor, No 23/1, Seneviratna Building, Colombo Rd,
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15850.87361652044!2d80.4011196!3d6.6817646!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9b3ff0209d699c6!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602858333835!5m2!1sen!2slk"
+															width="550" height="700"  frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Wattala Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Wattala">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Wattala" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															147 St Michaels Rd, Colombo 00700
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15840.681536156002!2d79.893313!3d6.9892022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe05b0bbef223a9b6!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602858423057!5m2!1sen!2slk"
+															width="550" height="700"  frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Mathara Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Mathara">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Mathara" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															04 Railway Station Rd, Matara
+														</h4>
+
+													</div>
+													<div class="modal-body">
+
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15873.306436455787!2d80.5438547!3d5.949654!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce8b381d77f91d04!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602858471452!5m2!1sen!2slk"
+															width="550" height="700"  frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Padukka Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Padukka">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Padukka" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															16 Kottawa - Talagala Rd, Padukka
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15845.630905948781!2d80.0919453!3d6.8416251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x82e6cd59ea62c67!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602858506553!5m2!1sen!2slk"
+															width="600" height="450" frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Palawaththa Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Palawaththa">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Palawaththa" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															147 St Michaels Rd, Colombo 00700
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.219792827065!2d79.8527553!3d6.9139097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3a74825bd80211cf!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602857227917!5m2!1sen!2slk"
+															width="550" height="700"  frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Narahenpita Fort Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Narahenpita">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Narahenpita" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Block 47 Narahenpita Economic Center, Kirimandala Mawatha,
+															11222
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.880974097647!2d79.8822131!3d6.8941627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xee8ac4833d3652eb!2sSarasavi%20Bookshop!5e0!3m2!1sen!2slk!4v1602858638693!5m2!1sen!2slk"
+															width="600" height="450" frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Dehiwala Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Dehiwala">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Dehiwala" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															147 St Michaels Rd, Colombo 00700
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.219792827065!2d79.8527553!3d6.9139097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3a74825bd80211cf!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602857227917!5m2!1sen!2slk"
+															width="550" height="700"  frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Piliyandala Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Piliyandala">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Piliyandala" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															82 Moratuwa - Piliyandala Rd, Piliyandala
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15846.964146720447!2d79.9211954!3d6.8013266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa1a80041bdd6962e!2sSarasavi%20BookShop!5e0!3m2!1sen!2slk!4v1602858701438!5m2!1sen!2slk"
+															width="600" height="450" frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+														<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.219792827065!2d79.8527553!3d6.9139097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3a74825bd80211cf!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602857227917!5m2!1sen!2slk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Kandy Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Kandy">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Kandy" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															86 A9, Kandy 20000
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.516341838513!2d80.6357500149301!3d7.2957354157275764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3662b80a8ecef%3A0x94191f1c63906ee8!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602858839321!5m2!1sen!2slk"
+															width="550" height="700"  frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+														<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.219792827065!2d79.8527553!3d6.9139097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3a74825bd80211cf!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602857227917!5m2!1sen!2slk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Kurunegala Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Kurunegala">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Kurunegala" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															56 Colombo Rd, Kurunegala
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.823279789162!2d80.36126691493051!3d7.48475691331787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae33a1f9bfdb2bd%3A0x88fbb2b05407e349!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602858889837!5m2!1sen!2slk"
+															width="550" height="700" frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Gampaha Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Gampaha">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Gampaha" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															36 Main Street, Gampaha
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.279728714538!2d79.9909957149297!3d7.093539218241399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fb93402622dd%3A0x7fc1968ac9e8fec2!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602858936005!5m2!1sen!2slk"
+															width="550" height="700"  frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Kiribathgoda Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Kiribathgoda">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Kiribathgoda" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															151/1 Kandy Rd, Kiribathgoda 11600
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.289781218485!2d79.9220223149295!3d6.975097219683224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae257f9f2699e6f%3A0xdf5662ac17ecb94!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602859152348!5m2!1sen!2slk"
+															width="550" height="700"  frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+														<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.289781218485!2d79.9220223149295!3d6.975097219683224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae257f9f2699e6f%3A0xdf5662ac17ecb94!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602858970094!5m2!1sen!2slk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Galle Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Galle">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="Galle" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															1'st Floor, Central bus stand, Colombo Rd, Galle 80000
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.7218915730464!2d80.21332991492815!3d6.032853130345754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bb562bc2fd%3A0xfe360c1c3ad316e4!2sSarasavi%20Bookshop%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1602859009107!5m2!1sen!2slk"
+															width="550" height="700"  frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="collapsible" class="grid-item">
+											<p>Sarasavi Warehouse Branch</p>
+											<p>0778240756</p>
+											<button type="button" class="btn btn-primary" data-toggle="modal"
+												data-target="#Warehouse">
+												View on map
+											</button>
+										</div>
+										<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+											aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" id="Warehouse">
+															Sarasavi Bookshop (Pvt) Ltd
+
+														</h4>
+														<h4 class="modal-title" id="exampleModalLongTitle">
+															30 Stanley Tilakaratne Mawatha, Nugegoda 10250
+														</h4>
+
+													</div>
+													<div class="modal-body">
+														<iframe
+															src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507028.7023648097!2d79.60936133281251!3d6.871215300000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a44474edf8b%3A0x7008d86fbca0ee75!2sSarasavi%20Warehouse!5e0!3m2!1sen!2slk!4v1602859048980!5m2!1sen!2slk"
+															width="550" height="700"  frameborder="0" style="border:0;"
+															allowfullscreen="" aria-hidden="false"
+															tabindex="0"></iframe>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary"
+															data-dismiss="modal">Close</button>
+
+													</div>
+												</div>
+											</div>
+										</div>
+
 									</div>
 								</div>
 							</div>
-						<br><br>
+							<br><br>
 						</div>
 					</div>
 				</div>
@@ -261,83 +1160,63 @@
 				</div>
 			</div>
 		</div>
+		<br><br>
 		<!-------------------------------------------------FOOTER------------------------------------------------------------->
-		<footer id="colorlib-footer" role="contentinfo">
+
+		<footer id="colorlib-footer" role="contentinfo" style="background-color: #03254c;">
 			<div class="container">
 				<div class="row row-pb-md">
-					<div class="col-md-3 colorlib-widget">
-						<h4>About Store</h4>
-						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta
-							adipisci architecto culpa amet.</p>
-						<p>
-						<ul class="colorlib-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-						</p>
+					<div class="col colorlib-widget" style="color: white;">
+						<h4 style="font-size: 25px; color: white;">About Us</h4>
+						<p>Sarasavi.lk is a website for an extensive collection of books, stationery and magazines.
+							Not only a “one-stop shop” for book lovers but also an interactive and innovative destination
+							 designed to make it fun and exciting to discover and shop for new books and gifts online.</p>
+						
 					</div>
-					<div class="col-md-2 colorlib-widget">
-						<h4>Customer Care</h4>
-						<p>
-						<ul class="colorlib-footer-links">
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Returns/Exchange</a></li>
-							<li><a href="#">Gift Voucher</a></li>
-							<li><a href="#">Wishlist</a></li>
-							<li><a href="#">Special</a></li>
-							<li><a href="#">Customer Services</a></li>
-							<li><a href="#">Site maps</a></li>
-						</ul>
-						</p>
-					</div>
-					<div class="col-md-2 colorlib-widget">
-						<h4>Information</h4>
-						<p>
-						<ul class="colorlib-footer-links">
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Delivery Information</a></li>
-							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">Support</a></li>
-							<li><a href="#">Order Tracking</a></li>
-						</ul>
+
+					<div class="col colorlib-widget" style="padding-left: 150px; color: white;">
+						<h4  style="font-size: 25px; color: white;">Information</h4>
+						<p  style="color: white;">
+							<ul class="colorlib-footer-links"  style="color: white;">
+								<li ><a href="about.html" style="color: white;">About us</a></li>
+								<li><a href="privacyPolicy.html" style="color: white;">Privacy Policy</a></li>
+								<li><a href="branchNetwork.html" style="color: white;">Branch Network</a></li>
+								<li><a href="termsofService.html" style="color: white;">Terms of Service</a></li>
+							</ul>
 						</p>
 					</div>
 
-					<div class="col-md-2">
-						<h4>News</h4>
+					<div class="col"  style="color: white;">
+						<h4 style="font-size: 25px; color: white;">Contact Us</h4>
 						<ul class="colorlib-footer-links">
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="#">Press</a></li>
-							<li><a href="#">Exhibitions</a></li>
-						</ul>
-					</div>
-
-					<div class="col-md-3">
-						<h4>Contact Information</h4>
-						<ul class="colorlib-footer-links">
-							<li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
-							<li><a href="tel://1234567920">+ 1235 2355 98</a></li>
-							<li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-							<li><a href="#">yoursite.com</a></li>
+							<li>Follow us on social networks</li>	
+								<a href="https://www.facebook.com/sarasavibooks/"><i class="fab  fa-twitter-square" style="padding-left: 10px; font-size: 30px; color: white; padding-bottom: 10px;"></i></a>
+								<a href="https://twitter.com/sarasavibooks"><i class="fab fa-facebook-square"  style="padding-left: 10px; font-size: 30px; color: white;"></i></a>
+								<a href="https://www.youtube.com/channel/UCUjZNSutD2ik5h-1-vnftuQ/videos"><i class="fab  fa-youtube" style="padding-left: 10px; font-size: 35px; color: white; "></i></a>	
+							<li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+							  </svg>  webadmin@sarasavi.lk</li>
+							<li> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+							  </svg>  (+94) 711 30 40 50 , (+94) 11 2820820</li>
+							<li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+							  </svg>  Monday - Friday : 9.30 am to 5.00 pm</li>
+							<li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+							  </svg>  Saturday : 9.30 am to 1.00 pm</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="copy">
 				<div class="row">
-					<div class="col-md-12 text-center">
+					<div class="col-md-12 text-center " style="color: white;">
 						<p>
-							<span class="block">
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-								Copyright &copy;
-								<script>document.write(new Date().getFullYear());</script> All rights reserved | This
-								template is made with <i class="icon-heart2" aria-hidden="true"></i> by <a
-									href="https://colorlib.com" target="_blank">Colorlib</a>
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
-							<span class="block">Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a>
-								, <a href="http://pexels.com/" target="_blank">Pexels.com</a></span>
+							<hr style="width: 85%;">
+							<span class="block" style="background-color: #03254c;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  Sarasavi Bookshop (pvt) Ltd  by 
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span> 
 						</p>
 					</div>
 				</div>
@@ -346,9 +1225,9 @@
 	</div>
 
 	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+		<a href="#" class="js-gotop" style="background-color: white; color: #03254c;"><i class="fa fa-arrow-up" ></i></a>
 	</div>
-
+	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -370,8 +1249,41 @@
 	<script src="js/jquery.stellar.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+<!--font awesome library---->
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<!-----------LOGIN VALIDATION----------------------->
+	<script>
+
+		function validation() {
+			var email = document.getElementById('email').value;
+			var password = document.getElementById("recipient-pass").value;
+
+
+
+			if (email == '') {
+				document.getElementById("name").innerHTML = "email can not be empty!";
+			}
+			else
+				if (emailIsValid(email) == false) {
+					document.getElementById("name").innerHTML = "email should be valid pattern";
+				}
+				else
+					if (password == '') {
+						document.getElementById("name").innerHTML = "";
+						document.getElementById("pass").innerHTML = "password can not be empty!";
+					}
+					else {
+						document.getElementById("pass").innerHTML = "";
+						window.location.href = "indexsarasavi.html";
+					}
+			function emailIsValid(email) {
+				return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+			}
+		}
 	</script>
 
-</body>
+	</body>
+	
 
 </html>
+

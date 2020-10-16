@@ -61,7 +61,7 @@
  }
 
  .track .step.active:before {
-     background: #FF5722
+     background: #0c386b
  }
 
  .track .step::before {
@@ -74,7 +74,7 @@
  }
 
  .track .step.active .icon {
-     background: #ee5435;
+     background: #0c386b;
      color: #fff
  }
 
@@ -132,7 +132,7 @@
  .itemside .title {
      display: block;
      margin-bottom: 5px;
-     color: #212529
+     color: #0c386b
  }
 
  p {

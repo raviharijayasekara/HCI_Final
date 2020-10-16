@@ -1,9 +1,48 @@
+<!DOCTYPE HTML>
+<html>
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!--font awesome library---->
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Date Picker -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -31,287 +70,522 @@
 
         
     </style>
-    
+    <style>
+      @media (max-width: 640px) {
+  
+  
+        #menu,
+        #search {
+          display: none;
+        }
+  
+        .svgwidth {
+          width: 100%;
+          height: 500px;
+        }
+  
+        .validate {
+          color: red;
+          ;
+        }
+  
+      }
+  
+      .centered {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+  
+      .text-block {
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        height: 475px;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+  
+      .text-middel {
+        text-align: center;
+        vertical-align: middle;
+      }
+  
+      .animate {
+        -webkit-animation: background 5s cubic-bezier(1, 0, 0, 1) infinite;
+        animation: background 5s cubic-bezier(1, 0, 0, 1) infinite;
+        height: 475px;
+      }
+  
+      .smsize {
+        height: 200px;
+      }
+  
+      .smsize2 {
+        height: 220px;
+      }
+  
+      .animate2 {
+        -webkit-animation: background 5s cubic-bezier(1, 0, 0, 1) infinite;
+        animation: background 5s cubic-bezier(1, 0, 0, 1) infinite;
+        height: 200px;
+      }
+  
+      .svgwidth {
+        width: 100%;
+        height: 440px;
+      }
+  
+      .svgwidth2 {
+        width: 100%;
+        height: 225px;
+      }
+  
+      .spa {
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 30%;
+        font-size: 500%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+  
+      .spa2 {
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 15%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+  
+      @-webkit-keyframes background {
+        0% {
+          background-color: #99ff99;
+        }
+  
+        33% {
+          background-color: #ffb3ff;
+        }
+  
+        67% {
+          background-color: #ffff99;
+        }
+  
+        100% {
+          background-color: #e6ccff;
+        }
+      }
+  
+      @keyframes background {
+        0% {
+          background-color: #99ff99;
+        }
+  
+        33% {
+          background-color: #ffb3ff;
+        }
+  
+        67% {
+          background-color: #ffff99;
+        }
+  
+        100% {
+          background-color: #e6ccff;
+        }
+      }
+  
+      .hoverlinks {
+        color: white;
+        text-decoration: none;
+      }
+  
+      .serif {
+  
+        font-family: "Times New Roman", Times, serif;
+      }
+  
+      .sansserif {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+  
+      .hoverlinks:hover {
+        color: black;
+      }
+    </style>
+    <style>
+      @media (max-width: 640px) {
+  
+  
+        #menu,
+        #search {
+          display: none;
+        }
+  
+        .svgwidth {
+          width: 100%;
+          height: 500px;
+        }
+  
+        .validate {
+          color: red;
+          ;
+        }
+  
+      }
+  
+      .centered {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+  
+      .text-block {
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        height: 475px;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+  
+      .text-middel {
+        text-align: center;
+        vertical-align: middle;
+      }
+  
+      .animate {
+        -webkit-animation: background 5s cubic-bezier(1, 0, 0, 1) infinite;
+        animation: background 5s cubic-bezier(1, 0, 0, 1) infinite;
+        height: 475px;
+      }
+  
+      .smsize {
+        height: 200px;
+      }
+  
+      .smsize2 {
+        height: 220px;
+      }
+  
+      .animate2 {
+        -webkit-animation: background 5s cubic-bezier(1, 0, 0, 1) infinite;
+        animation: background 5s cubic-bezier(1, 0, 0, 1) infinite;
+        height: 200px;
+      }
+  
+      .svgwidth {
+        width: 100%;
+        height: 440px;
+      }
+  
+      .svgwidth2 {
+        width: 100%;
+        height: 225px;
+      }
+  
+      .spa {
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 30%;
+        font-size: 500%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+  
+      .spa2 {
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 15%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+  
+      @-webkit-keyframes background {
+        0% {
+          background-color: #99ff99;
+        }
+  
+        33% {
+          background-color: #ffb3ff;
+        }
+  
+        67% {
+          background-color: #ffff99;
+        }
+  
+        100% {
+          background-color: #e6ccff;
+        }
+      }
+  
+      @keyframes background {
+        0% {
+          background-color: #99ff99;
+        }
+  
+        33% {
+          background-color: #ffb3ff;
+        }
+  
+        67% {
+          background-color: #ffff99;
+        }
+  
+        100% {
+          background-color: #e6ccff;
+        }
+      }
+  
+      .hoverlinks {
+        color: white;
+        text-decoration: none;
+      }
+  
+      .serif {
+  
+        font-family: "Times New Roman", Times, serif;
+      }
+  
+      .sansserif {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+  
+      .hoverlinks:hover {
+        color: black;
+      }
+    </style>>
   </head>
   <body>
         <!--Add your header here---------------------------------------------------------------->
-
-        <header class="py-4">
-          <div class="row ">
-        
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar " style="background-color: #0000e6;">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
-                        aria-controls="navbar" aria-expanded="true" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse " id="navbar" >
-                        <ul class="navbar-nav mr-auto smooth-scroll ">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt-fill text-danger" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                                  </svg></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" id="nabout" href="#exampleModalCenter" data-toggle="modal" data-target="#exampleModalCenter">CONTACT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" id="naedu"  href="#NEWSLETTER" data-toggle="modal" data-target="#NEWSLETTER">NEWSLETTER</a>
-                            </li>
-                            
-                        </ul>
-                       
-                        <!-- Social Icon  -->
-                       
-                        <ul class="navbar-nav mr-sm-2">
-                            <li class="nav-item " id="search">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            </li>
-                            <li class="nav-item mr-sm-2">
-                                <a class="nav-link text-white "  href="#LOGIIN" data-toggle="modal" data-target="#LOGIIN">SIGH IN</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-white" href="#">CART(0)</a>
-                            </li>
-                        </ul>
-                  
-                </div>
-                
-            </div>
-                 </nav>
-        
-              
-          </div>
-             
-          </header>
-        <br>
-          <div class="container">
-        <div class="row mb-2 py-4">
-           <div class="col-2  py-4">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Sarasavi_Logo.gif" class="img-fluid mx-auto" alt="Responsive image" >
-            </div>
-            
-            <div class="col-7 py-4 ">
-                <h3 class="text-center" style="font-family: French Script MT; font-size: 40px;"><b>Sarasavi Book Store</b></h3>
-            </div>
-        
-            <div class="col-3">
+        <div id="page">
+          <nav class="colorlib-nav" role="navigation">
+            <div class="top-menu">
+              <div class="container">
                 <div class="row">
-                    <div class="col-5" id="menu">
-                       <h3 class="text-right" style="font-family: Candara Light; font-size: 20px; margin-top: 39px;"><b>MENU</b> </h3>
-                    </div>
-                    <div class="col-7">
-                        <button class="button bg-light" data-toggle="modal" data-target="#menumodel" style="margin-top: 32px;">
-                        <span class="material-icons">reorder</span>
-                    </button>
-                     </div>
-               </div>
+                  <div class="col-xs-2">
+                    <div id="colorlib-logo"><a href="index.html">Sarasavi Bookshop</a></div>
+                  </div>
+                  <div class="col-xs-10 text-right menu-1">
+                    <ul>
+                      <li class="active"><a href="index.html">Home</a></li>
+                      <li class="has-dropdown">
+                        <a href="shop.html">Shop</a>
+                        <ul class="dropdown">
+                          <li><a href="product-detail.html">Product Detail</a></li>
+                          <li><a href="cart.html">Shopping Cart</a></li>
+                          <li><a href="checkout.html">Checkout</a></li>
+                          <li><a href="order-complete.html">Order Complete</a></li>
+                          <li><a href="add-to-wishlist.html">Wishlist</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-dropdown">
+                        <a href="blog.html">Category</a>
+                        <ul class="dropdown">
+                          <li><a href="catalogue.html">Catalogue
+                            </a></li>
+                          <li><a href="./swarnapusthaka.html">ස්වර්ණ පුස්තක</a></li>
+                          <li><a href="sarasaviPublications.html">Sarasavi Publications</a></li>
+                          <li><a href="sinhalaBook.html">Sinhala Books</a></li>
+                          <li><a href="englishBook.html">English Books</a></li>
+                          <li><a href="newArraivals.html">New Arrivals</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-dropdown">
+                        <a href="blog.html">Kaushalya</a>
+                        <ul class="dropdown">
+                          <li><a href="discountedBooks.html">Discounted Books
+                            </a></li>
+                          <li><a href="voucherPage.html">Voucher Page</a></li>
+                          <li><a href="quotation.html">Quotation</a></li>
+                          <li><a href="accountSettings.html">Account Settings</a></li>
+      
+                        </ul>
+                      </li>
+                      <li class="has-dropdown">
+                        <a href="blog.html">footer items</a>
+                        <ul class="dropdown">
+                          <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                          <li><a href="./shipping.html">Shipping and Returns</a></li>
+                          <li><a href="termsofService.html">Terms of Service</a></li>
+                          <li><a href="./contactUs.html">Contact Us</a></li>
+                          <li><a href="branchNetwork.html">Branch Network</a></li>
+      
+                        </ul>
+                      </li>
+                      <li><a href="about.html">About</a></li>
+                      <li>
+                        <a href="#NEWSLETTER" data-toggle="modal" data-target="#NEWSLETTER">Newsletter</a>
+                      </li>
+                    
+                      <li><a href="#exampleModalCenter" data-toggle="modal">contact</a></li>
+                      
+      
+                      <li><a href="cart.html"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
+      
+                      <li><a href="add-to-wishlist.html"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                            class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                              d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                          </svg></a></li>
+                      <li><a href="#LOGIIN" data-toggle="modal">Sign In</a></li>
+      
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-           
-          </div>
-        </div>
-        </div>
-        <hr>
-        
-        <!-- Modal contact -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle" style="font-family: Bahnschrift;"><b>CONTACT</b></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <ul class="nav navbar-nav navbar-right">
-                  <li> <strong><h5 class="text-center my-4">Sarasavi Bookshop(pvt)Ltd</h5></strong></li>
-                  <li> <p class="lead my-2 text-center" style="font-family: Biome Light;">TEl : (+94) 112802802</p></li>
-                  <li> <p class="lead my-2 text-center" style="font-family: Biome Light"> webadmin@Sarasavi.lk</p></li>
-                  <li> <p class="lead my-2 text-center" style="font-family: Biome Light;">Main Shop :</p></li>
-                  <li> <p class="lead my-2 text-center" style="font-family: Biome Light;">Monday    9.30 AM   5 PM</p></li>
-                  <li> <p class="lead my-2 text-center" style="font-family: Biome Light;">Saturday   9.30 AM   1 PM</p></li>
-                </ul>
-              </div>
-              <div class="modal-footer justify-content-center" >
-                <a href="./contactus.html"> <button type="button " class="btn" style="background-color: #000080; color: white;">Leave Your Message</button> </a>
-               
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--end Modal contact -->
-        
-        <!-- Modal menu -->
-        <div class="modal fade" id="menumodel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog  modal-dialog-centered" role="document">
-            <div class="modal-content d-flex justify-content-start">
-              <div class="modal-header ">
-                <strong class="mx-5"><h5 class="text-center ">MENU</h5></strong>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body d-flex justify-content-start">
-                <ul class="nav navbar-nav navbar-right mx-5">
-                  <!-- Button 01  -->
-                  <a href="#">
-                   <button type="button"  class="btn  my-1 text-left" >
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-                    About Us  </button></a>
-                  <!-- Button 02  -->
-                  <a href="#">
-                  <button type="button"  class="btn  my-1 text-left" >
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-                    Privancy Plicy  </button></a>
-                     <!-- Button 03  -->
-                     <a href="#" >
-                     <button type="button"  class="btn   my-1 text-left" >
-                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                    </svg>
-                      Terms Of Service  </button></a>
-        
-                       <!-- Button 04  -->
-                       <a href="shipping.html">
-                     <button type="button"  class="btn   my-1 text-left" >
-                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                    </svg>
-                      Shipping and Return  </button></a>
-        
-                         <!-- Button 05  -->
-                         <a href="#">
-                     <button type="button"  class="btn   my-1 text-left" >
-                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                    </svg>
-                      Branch Network  </button></a>
-        
-                      <a href="./contactus.html">
-                      <button type="button"  class="btn   my-1 text-left" >
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                        Contact Us </button></a>
-        
-                        <a href="#">
-                        <button type="button"  class="btn my-1 text-left mx-5" >
-                          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
-                          </svg>
-                          Wishilish </button></a>
-        
-                          <a href="#">
-                          <button type="button"  class="btn my-1 text-left mx-5" >
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
-                            </svg>
-                            Account Settings </button></a>
-                          
-                            <a href="#">
-                            <button type="button"  class="btn my-1 text-left mx-5" >
-                              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
-                              </svg>
-                              Quotations </button> </a>
-        
-                              <a href="#">
-                                <button type="button"  class="btn my-1 text-left mx-5" >
-                                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
-                                  </svg>
-                                  Manage Orders </button> </a>
-        
-                                  <a href="./indexsarasavi.html">
-                                    <button type="button"  class="btn my-1 text-left" >
-                                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                                      </svg>
-                                      Sign Out </button> </a>
-                </ul>
+          </nav>
+          <!-- Modal contact -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle" style="font-family: Bahnschrift;">
+                    <b>Contact</b></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li> <strong>
+                        <h5 class="text-center my-4">Sarasavi Bookshop(pvt)Ltd</h5>
+                      </strong></li>
+                    <li>
+                      <p class="lead my-2 text-center" style="font-family: Biome Light;">TEl : (+94) 112802802
+                      </p>
+                    </li>
+                    <li>
+                      <p class="lead my-2 text-center" style="font-family: Biome Light"> webadmin@Sarasavi.lk
+                      </p>
+                    </li>
+                    <li>
+                      <p class="lead my-2 text-center" style="font-family: Biome Light;">Main Shop :</p>
+                    </li>
+                    <li>
+                      <p class="lead my-2 text-center" style="font-family: Biome Light;">Monday 9.30 AM 5 PM
+                      </p>
+                    </li>
+                    <li>
+                      <p class="lead my-2 text-center" style="font-family: Biome Light;">Saturday 9.30 AM 1 PM
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <a href="./contactUs.html"> <button type="button " class="btn"
+                      style="background-color: #1664a2; color: white;">Leave Your Message</button> </a>
+      
+      
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        
-        <!-- Modal LOGIN -->
-        <div class="modal fade" id="LOGIIN" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-            <div class="modal-content ">
-              <div class="modal-header">
-                <br>
-                <h2 class="text-center my-2 mx-5" style="font-family: 'Gabriola', Haettenschweiler, 'Arial Narrow Bold', sans-serif"><b>Welcome to the Profile..</b></h2>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body justify-content-center">
-                <ul class="nav navbar-nav navbar-right">
-               
-                  <li> <strong><h5 class=" my-2 mx-5" style="font-family: 'Bahnschrift', 'Arial Narrow', Arial, sans-serif;">Join With Us..</h5></strong></li>
-                  <li><form>
-                    <div class="form-group mx-5">
-                      <input type="text" class="form-control" placeholder="E-Mail Address" id="email">
-                      <div style="color: red; " id="name" class="text-center"> </div>
-                    </div>
-                    <div class="form-group mx-5">
-                      <input type="password" class="form-control" placeholder="Password" id="recipient-pass">
-                      <div style="color: red; " id="pass"> </div>
-                    </div>
-                  </form>
-                </li>
-                <li> <a href="./forgetYourPassword-new.html" class=" text-dark" style="font-family: 'Gabriola', 'Arial Narrow', Arial, sans-serif; " ><h3 class="mx-5"> <b>Forgot your Password ? </b></h3></a></li>
-                </ul>
-              </div>
-              <div class="modal-footer" style="margin-right: 40px;">
-    
-    
-    
-                <button type="button " class="btn " style="width: 20%;margin-right: 40px; background-color: #000080;color: white; " onclick="validation()"> Sing In  </button> 
-                <button type="button " class="btn " style="width: 20%;margin-right: 40px; background-color: #000080; "><a href="#" style="color: white;" > Sing Up </a> </button> 
-                
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--End Modal LOGIIN -->
-        
-        <!-- Modal NEWS Letter -->
-        <div class="modal fade" id="NEWSLETTER" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content ">
-              <div class="modal-header">
-                <strong><h5 class="text-center my-4" style="font-family: Bahnschrift"><b>News Letter</b></h5></strong>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body justify-content-center">
-                <ul class="nav navbar-nav navbar-right">
-                <img src="https://seeklogo.com/images/S/sarasavi-book-shop-logo-849DCED3EE-seeklogo.com.png" width="50%" class="img-fluid mx-auto" alt="Responsive image" >
-                  <li> <strong><h5 class="text-center my-4" style="font-family: Biome Light;">The Sarasavi Bookstore Newsletter</h5></strong></li>
-                  <li> <p class="lead my-2 text-center" style="font-family: Biome Light; font-size: 15px;">Confirm Your Subscription</p></li>
-                  <a href="./indexsarasavi.html" > <button type="button" style=" padding: 5px; width: 200px; margin-left: 140px; background-color: #000080; color: white;" class="btn  text-center my-3" >Yes, I want to Subscribe.</button> </a>
-                   <!-- Modal NEWS Letter fill rest of content  in 1 p  -->
-                   <li> <p class="lead my-3 text-center" style="font-family: Biome Light; font-size: 16px;"><b>If you didn't subscribe to this list or you're not sure why 
-                     you received this mail, you can delete it. You will not be subscribed if you don't click on the link above. if you have any questions, you can contact us.</b></p></li>
-                   <!-- Modal NEWS Letter fill rest of content  in 2 p  with link -->
-                   <li> <p class="lead my-2 text-center" style="font-family: Arial; font-size: 15px;">Thank you! </p></li>
-                </ul>
+          <!--end Modal contact -->
+          <!-- Modal LOGIN -->
+          <div class="modal fade" id="LOGIIN" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <br>
+                  <h2 class="text-center my-2 mx-5"
+                    style="font-family: 'Gabriola', Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+                    <b>Welcome to the Profile..</b></h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body justify-content-center">
+                  <ul class="nav navbar-nav navbar-right">
+      
+                    <li> <strong>
+                        <h5 class=" my-2 mx-5" style="font-family: 'Bahnschrift', 'Arial Narrow', Arial, sans-serif;">Join With Us..</h5>
+                      </strong>
+                    </li>
+                    <li>
+                      <form>
+                        <div class="form-group mx-5">
+                          <input type="text" class="form-control" placeholder="E-Mail Address" id="email">
+                          <div style="color: red;" id="name"> </div>
+                        </div>
+                        <div class="form-group mx-5">
+                          <input type="password" class="form-control" placeholder="Password"
+                            id="recipient-pass">
+                          <div style="color: red;" id="pass"> </div>
+                        </div>
+                      </form>
+                    </li>
+                    <li> <a href="./forgetYourPassword-new.html" class=" text-dark"
+                        style="font-family: 'Gabriola', 'Arial Narrow', Arial, sans-serif; ">
+                        <h3 class="mx-5"> <b>Forgot your Password ? </b></h3>
+                      </a></li>
+                  </ul>
+                </div>
+                <div class="modal-footer" style="margin-right: 40px;">
+      
+      
+      
+                  <button type="button " class="btn "
+                    style="width: 20%;margin-right: 40px; background-color: #1664a2;  color: white; "
+                    onclick="validation()">Sing In </button>
+                  <button type="button " class="btn "
+                    style="width: 20%;margin-right: 40px; background-color: #1664a2; "><a href="signUp.html"
+                      style="color: white;"> Sing Up </a> </button>
+      
+                </div>
               </div>
             </div>
           </div>
-        </div>
-    
-        
-        <!-- Header file ends here---------------------------------------------------------------------->
+          <!--End Modal LOGIIN -->
+          <!-- Modal NEWS Letter -->
+          <div class="modal fade" id="NEWSLETTER" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <strong>
+                    <h5 class="text-center my-4" style="font-family: Bahnschrift"><b>News Letter</b></h5>
+                  </strong>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body justify-content-center">
+                  <ul class="nav navbar-nav navbar-right">
+                    <img src="https://seeklogo.com/images/S/sarasavi-book-shop-logo-849DCED3EE-seeklogo.com.png"
+                      width="50%" class="img-fluid mx-auto" alt="Responsive image">
+                    <li> <strong>
+                        <h5 class="text-center my-4" style="font-family: Biome Light;">The Sarasavi
+                          Bookstore Newsletter</h5>
+                      </strong></li>
+                    <li>
+                      <p class="lead my-2 text-center" style="font-family: Biome Light; font-size: 15px;">
+                        Confirm Your Subscription</p>
+                    </li>
+                    <a href="./indexsarasavi.html"> <button type="button"
+                        style=" padding: 5px; width: 200px; margin-left: 140px; background-color: #000080; color: white;"
+                        class="btn  text-center my-3">Yes, I want to Subscribe.</button> </a>
+                    <!-- Modal NEWS Letter fill rest of content  in 1 p  -->
+                    <li>
+                      <p class="lead my-3 text-center" style="font-family: Biome Light; font-size: 16px;">
+                        <b>If you didn't subscribe to this list or you're not sure why
+                          you received this mail, you can delete it. You will not be subscribed if you
+                          don't click on the link above. if you have any questions, you can contact
+                          us.</b></p>
+                    </li>
+                    <!-- Modal NEWS Letter fill rest of content  in 2 p  with link -->
+                    <li>
+                      <p class="lead my-2 text-center" style="font-family: Arial; font-size: 15px;">Thank you!
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+              <!-- Header file ends here---------------------------------------------------------------------->
         
        
         <div class="container-fluid col-md-9"  >
@@ -357,98 +631,134 @@
         
         <!--footer part starts here-->
         
-        <div>
-          <hr>
-          <div class="d-flex flex-row justify-content-center">
-              <a href="./indexsarasavi.html" class="col-md-2 align-self-center" style="font-size: 20px; color:black; text-align: center;"><i>Back To List</i></a>
+        <footer id="colorlib-footer" role="contentinfo" style="background-color: #03254c;">
+          <div class="container">
+            <div class="row row-pb-md">
+              <div class="col colorlib-widget" style="color: white;">
+                <h4 style="font-size: 25px; color: white;">About Us</h4>
+                <p>Sarasavi.lk is a website for an extensive collection of books, stationery and magazines.
+                  Not only a “one-stop shop” for book lovers but also an interactive and innovative destination
+                   designed to make it fun and exciting to discover and shop for new books and gifts online.</p>
+                
+              </div>
+    
+              <div class="col colorlib-widget" style="padding-left: 150px; color: white;">
+                <h4  style="font-size: 25px; color: white;">Information</h4>
+                <p  style="color: white;">
+                  <ul class="colorlib-footer-links"  style="color: white;">
+                    <li ><a href="about.html" style="color: white;">About us</a></li>
+                    <li><a href="privacyPolicy.html" style="color: white;">Privacy Policy</a></li>
+                    <li><a href="branchNetwork.html" style="color: white;">Branch Network</a></li>
+                    <li><a href="termsofService.html" style="color: white;">Terms of Service</a></li>
+                  </ul>
+                </p>
+              </div>
+    
+              <div class="col"  style="color: white;">
+                <h4 style="font-size: 25px; color: white;">Contact Us</h4>
+                <ul class="colorlib-footer-links">
+                  <li>Follow us on social networks</li>	
+                    <a href="https://www.facebook.com/sarasavibooks/"><i class="fab  fa-twitter-square" style="padding-left: 10px; font-size: 30px; color: white;"></i></a>
+                    <a href="https://twitter.com/sarasavibooks"><i class="fab fa-facebook-square"  style="padding-left: 10px; font-size: 30px; color: white;"></i></a>
+                    <a href="https://www.youtube.com/channel/UCUjZNSutD2ik5h-1-vnftuQ/videos"><i class="fab  fa-youtube" style="padding-left: 10px; font-size: 35px; color: white; "></i></a>	
+                  <li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                    </svg>  webadmin@sarasavi.lk</li>
+                  <li> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+                    </svg>  (+94) 711 30 40 50 , (+94) 11 2820820</li>
+                  <li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    </svg>  Monday - Friday : 9.30 am to 5.00 pm</li>
+                  <li><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    </svg>  Saturday : 9.30 am to 1.00 pm</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <br><br>
-          <div class="container-fluid" style="background-color: #000066 ">
-              <br><br>
-              <div class="d-flex flex-row justify-content-center" >
-                  <div class="col-md-4 align-self-center" >
-                      <div class="input-group md-form form-sm ">
-                          <input class="form-control red-border" type="text" placeholder="
-                          BOOK SEARCH &#128270;" 
-                          style="border-radius: 30px; height: 60px; width:100px; ">
-                      </div>
-                  </div>
+          <div class="copy">
+            <div class="row">
+              <div class="col-md-12 text-center " style="color: white;">
+                <p>
+                  <hr style="width: 85%;">
+                  <span class="block" style="background-color: #03254c;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  Sarasavi Bookshop (pvt) Ltd  by 
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span> 
+                </p>
               </div>
-              <br><br>
-              <div class="col-md-3 align-self-center container-fluid" style="margin: 0 auto;">
-                  <img class="img-fluid"
-                       src="https://cdn.lolcfinance.com/lolc-finance-uploads/2018/07/7888d036-sarasavi-bookshop-pvt-ltd.jpg"
-                       style="margin: auto;display: block;">
-              </div>
-              <br>
-              <hr width="70%" color="white">
-              <br>
-          </div> 
-
-          <footer class="page-footer font-small container-fluid" style="background-color:   #000066   ;margin: 0 auto;">
-              <div class="container-fluid text-center text-md-left"style="margin: 0 auto;">
-                  <div class="row col-md-12" style="margin: 0 auto;">
-                      <div class="col-md-4 mx-auto" >
-                          <br>
-                          <ul class="list-unstyled">
-                              <li style="text-align:center">
-                                  <a class="hoverlinks serif" href="#!" style=" font-size: 30px;text-decoration : none;  ">ABOUT US</a>
-                              </li>
-                              <br>
-                              <li style="text-align:center">
-                                  <a href="./shipping.html" class="hoverlinks serif" href="#!" style="font-size: 30px;text-decoration : none;"> SHIPPING AND <br>RETURNS</a>
-                              </li>
-                          </ul>
-                      </div>
-                      <hr class="clearfix w-100 d-md-none">
-                      <div class="col-md-4 mx-auto">
-                          <br>
-                          <ul class="list-unstyled">
-                              <li style="text-align: center;">
-                                  <a href="#!" style="color:white;">webadmin@sarasavi.lk</a>
-                              </li>
-                              <br>
-                              <li style="color: white; text-align: center;" >
-                                  <b>Main Shop:</b> <br>
-                                  Monday to Friday 5.00 am to 6.00pm <br>
-                                  Satuday 5.30 am to 1 pm
-                              </li>
-                          </ul>
-                      </div>
-                      <hr class="clearfix w-100 d-md-none">
-                      <div class="col-md-4 mx-auto">
-                          <br>
-                          <ul class="list-unstyled">
-                              <li style="text-align:center">
-                                  <a class="hoverlinks serif" href="#!" style="font-size: 30px;text-decoration : none;">BRANCH NETWORK</a>
-                              </li>
-                              <br>
-                              <li style="text-align:center">
-                                  <a class="hoverlinks serif" href="#!" style="font-size: 30px;text-decoration : none;">TERMS OF SERVICES</a>
-                              </li>
-                              <br>
-                              <li style="text-align:center">
-                                  <a class="hoverlinks serif" href="#!" style="font-size: 30px;text-decoration : none;">PRIVACY POLICY</a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-              <div class="footer-copyright row margin: 0 auto;" style="color: aliceblue;">
-                  <p style="text-align: center; margin-left:0; margin-right:auto;padding:20px;margin-top: 50% auto;">&nbsp;&nbsp; All Content © Copyright 2020 :&nbsp; Sarasavi Bookshop (pvt) Ltd</p>
-                  <br>
-                  <img class=" img-fluid" src='https://img.pngio.com/visa-card-logo-png-images-free-download-credit-card-logos-png-1440_335.png' style="max-width: 270px; max-height: 50px; margin-left:auto; margin-right:0;padding-right:30px;margin-top: 50% auto;">
-              </div>
-          </footer>
+            </div>
+          </div>
+        </footer>
       </div>
-
+    
+      <div class="gototop js-top">
+        <a href="#" class="js-gotop" style="background-color: white; color: #03254c;"><i class="fa fa-arrow-up" ></i></a>
+      </div>
+    
+      <!-- jQuery -->
+      <script src="js/jquery.min.js"></script>
+      <!-- jQuery Easing -->
+      <script src="js/jquery.easing.1.3.js"></script>
+      <!-- Bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Waypoints -->
+      <script src="js/jquery.waypoints.min.js"></script>
+      <!-- Flexslider -->
+      <script src="js/jquery.flexslider-min.js"></script>
+      <!-- Owl carousel -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- Magnific Popup -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/magnific-popup-options.js"></script>
+      <!-- Date Picker -->
+      <script src="js/bootstrap-datepicker.js"></script>
+      <!-- Stellar Parallax -->
+      <script src="js/jquery.stellar.min.js"></script>
+      <!-- Main -->
+      <script src="js/main.js"></script>
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+      <script>
+    
+        function validation() {
+          var email = document.getElementById('email').value;
+          var password = document.getElementById("recipient-pass").value;
+    
+    
+    
+          if (email == '') {
+            document.getElementById("name").innerHTML = "email can not be empty!";
+          }
+          else
+            if (emailIsValid(email) == false) {
+              document.getElementById("name").innerHTML = "email should be valid pattern";
+            }
+            else
+              if (password == '') {
+                document.getElementById("name").innerHTML = "";
+                document.getElementById("pass").innerHTML = "password can not be empty!";
+              }
+              else {
+                document.getElementById("pass").innerHTML = "";
+                window.location.href = "index.html";
+              }
+          function emailIsValid(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+          }
+        }
+      </script>
+    </body>
+    
+    </html>
         <!--Footer Part Ends Here-->
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <script>
 
 function subscribe()
@@ -501,7 +811,7 @@ function subscribe()
       else
       {
         document.getElementById("pass").innerHTML ="";
-        window.location.href = "indexsarasavi.html";
+        window.location.href = "index.html";
       }
   
   

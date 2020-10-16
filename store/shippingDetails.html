@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Sarasavi Bookshop</title>
+	<title>Store Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -46,8 +46,7 @@
 	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/terms.css">
-
+	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -146,6 +145,7 @@
 					</div>
 				</div>
 			</nav>
+
 			<!-- Breadcrumbs -->
 			<div class=Breadcrumbs>
 				<p><a href="index.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door-fill"
@@ -159,248 +159,207 @@
 						<path
 							d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
 					</svg>
-					<a href="termsofService.html">Terms of Service</a></li>
+					<a href="shipping.html">Shipping Details</a></li>
 				</p>
 			</div>
 			<!-- End Breadcrumbs -->
-
-			<!-- content starts here -->
-			<div class="col-md-12">
-				<div class="col-md-6">
-					<div class="product-img">
-						<img class="img-terms" src="images/IT18157024-Manthi/1.jpeg" alt="terms">
-					</div>
-
-				</div>
-
-
-				<div class="col-md-6">
-					<div class="pf-b61a86ad sc-fONwsr BcUQo" data-pf-type="Column">
-						<h3 mode="view" class="pf-b377d42c sc-gwVKww jSNcIx" data-pf-type="Heading"><span
-								class="pf-1feb1545 sc-RcBXQ uIbp" data-pf-type="Text">Introduction</span></h3>
-						<div class="pf-366535d6 sc-eXEjpC guisSt" data-pf-type="Divider"></div>
-						<p class="pf-7a889e01 sc-ebFjAB bLbPLR" data-pf-type="Paragraph"><span
-								class="pf-deae6e8e sc-RcBXQ uIbp" data-pf-type="Text">The Website Owner, including
-								subsidiaries and affiliates ("Website" or "Website Owner" or "we" or "us" or "our")
-								provides the information contained on this website or any of the pages comprising the
-								website ("website") to visitors ("visitors") (cumulatively referred to as "you" or
-								"your" hereinafter) subject to the terms and conditions set out in these website terms
-								and conditions, the privacy policy and any other relevant terms and conditions, policies
-								and notices which may be applicable to a specific section or module of this
-								website.&nbsp;</span></p>
-						<p class="pf-d1dbcbec sc-ebFjAB bLbPLR" data-pf-type="Paragraph"><span
-								class="pf-9d38b9bf sc-RcBXQ uIbp" data-pf-type="Text">Whilst every effort is made to
-								update the information contained on this website, neither the Website Owner nor any
-								third party or data or content provider make any representations or warranties, whether
-								express, implied in law or residual, as to the sequence, accuracy, completeness or
-								reliability of information, opinions, any share price information, research information,
-								data and/or content contained on the website (including but not limited to any
-								information which may be provided by any third party or data or content providers)
-								("information") and shall not be bound in any manner by any information contained on the
-								website. the Website Owner reserves the right at any time to change or discontinue
-								without notice, any aspect or feature of this website. You and your company rely on the
-								information contained on this
-								website at your own risk. If you find an error or omission at this site, please let us
-								know.</span></p>
-
-					</div>
-				</div>
-			</div>
-
-
 			<div class="colorlib-shop">
+				<div class="container">
+					<div class="row row-pb-md">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="process-wrap">
+								<div class="process text-center active">
+									<p><span>01</span></p>
+									<h3>Shopping Cart</h3>
+								</div>
+								<div class="process text-center active">
+									<p><span>02</span></p>
+									<h3>Billing Details</h3>
+								</div>
+								<div class="process text-center">
+									<p><span>03</span></p>
+									<h3>Shipping Details</h3>
+								</div>
+								<div class="process text-center">
+									<p><span>04</span></p>
+									<h3>Order Complete</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-7">
+							<form id="form" class="colorlib-form" onsubmit="placeOrder(event)">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label for="country">Select Country</label>
+                                            <div class="form-field">
+
+                                                <select name="people" id="people"
+                                                    class="form-control">
+                                                    <option value="#">Select country
+                                                    </option>
+                                                    <option value="#">Alaska</option>
+                                                    <option value="#">Australia</option>
+                                                    <option value="#">Bangladesh</option>
+                                                    <option value="#">China</option>
+                                                    <option value="#">Denmark</option>
+                                                    <option value="#">Egypt</option>
+                                                    <option value="#">India</option>
+                                                    <option value="#">Japan</option>
+                                                    <option value="#">Korea</option>
+                                                    <option value="#">Philippines</option>
+                                                    <option value="#">Sri Lanka</option>
 
 
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-6">
+                                            <label for="shipfname">First Name</label>
+                                            <input type="text" id="shipfname"
+                                                class="form-control"
+                                                placeholder="Your firstname" required>
 
-				<div data-container="true" class="pf-df8d5552 sc-kLIISr lgZhBD" data-pf-type="Section">
-					<div class="sc-dliRfk gThRmc" style="max-width: 1170px;">
-						<div class="pf-c32e3261 pf-r pf-r-eh pf-r-ew--3 pf-r-ew sc-ipXKqB ciNxzc" data-pf-type="Row">
-							<div class="pf-c pf-c-xs--12 pf-c-sm--12 pf-c-md--12 pf-c-lg--12" style="padding: 5px;">
-								<div class="pf-b274166c sc-fONwsr BcUQo" data-pf-type="Column">
-									<div class="pf-e1e5fe3e sc-iyvyFf gJXqlU" data-pf-type="Block"><i
-											class="pf-49e491bb fa fa-diamond sc-eMigcr lgHsl" data-pf-type="Icon"></i>
-										<div class="pf-daefe70c sc-iyvyFf gJXqlU" data-pf-type="Block">
-											<h3 mode="view" class="pf-8325731e sc-gwVKww jSNcIx" data-pf-type="Heading">
-												<span class="pf-26eb59b7 sc-RcBXQ uIbp" data-pf-type="Text">Trade
-													Marks</span></h3>
-											<p class="pf-fb31edbd sc-ebFjAB bLbPLR" data-pf-type="Paragraph"><span
-													class="pf-007a2367 sc-RcBXQ uIbp" data-pf-type="Text">The trade
-													marks, names, logos and service marks (collectively "trade
-													marks")
-													displayed on this website are registered and unregistered trade
-													marks of the Website Owner. Nothing contained on this website
-													should
-													be construed as granting any licence or right to use any trade
-													mark
-													without the prior written permission of the Website
-													Owner.</span>
-											</p>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label for="lname">Last Name</label>
+                                            <input type="text" id="shiplname"
+                                                class="form-control"
+                                                placeholder="Your lastname" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="fname">Address</label>
+                                            <input type="text" id="shipAddressOne"
+                                                class="form-control"
+                                                placeholder="Enter Your Address" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" id="shipAddressTwo"
+                                                class="form-control"
+                                                placeholder="Second Address" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="companyname">Town/City</label>
+                                            <input type="text" id="shipTown"
+                                                class="form-control"
+                                                placeholder="Town or City" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-6">
+                                            <label
+                                                for="stateprovince">State/Province</label>
+                                            <input type="text" id="shipProvince"
+                                                class="form-control"
+                                                placeholder="State Province" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="lname">Zip/Postal Code</label>
+                                            <input type="text" id="shipPostal"
+                                                class="form-control"
+                                                placeholder="Zip / Postal" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-6">
+                                            <label for="email">E-mail Address</label>
+                                            <input type="text" id="email"
+                                                class="form-control"
+                                                placeholder="ABC@gmail.com" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="Phone">Phone Number</label>
+                                            <input type="text" id="shipPhone"
+                                                class="form-control" placeholder="" required>
+                                        </div>
+                                        <button type="button " class="btn"
+                                        style="background-color: #1664a2;align-content: flex-end; margin-top:2rem ; color: white;">Shipping to this address</button>
+                                    
+                                    
+                                    </div>
+                                    
+                                        
+                            
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        
+                        </div>
+                    </div>
+                </form>
+						</div>
+						<div class="col-md-5">
+							<div class="cart-detail">
+								<h2>Cart Total</h2>
+								<ul>
+									<li>
+										<span>Subtotal</span> <span>Rs 5150.00</span>
+										<ul>
+											<li><span>3 x Gift Voucher #0012</span> <span>Rs 1500.00</span></li>
+											<li><span>1 x Sarasavi Hodi Potha</span> <span>Rs 250.00</span></li>
+											<li><span>1 x Universe In A Nutshell</span> <span>Rs 2800.00</span></li>
+											<li><span>1 x Panhidha</span> <span>Rs 600.00</span></li>
+										</ul>
+									</li>
+									<li><span>Delivery</span> <span>Rs 150.00</span></li>
+									<li><span>Order Total</span> <span>Rs 5300.00</span></li>
+								</ul>
+							</div>
+							<div class="cart-detail">
+								<h2>Payment Method</h2>
+								<div class="form-group">
+									<div class="col-md-12">
+										<div class="radio">
+											<label><input type="radio" name="optradio">Cash On Delivery</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-12">
+										<div class="radio">
+											<label><input type="radio" name="optradio">Card Payment</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="col-md-12">
+										<div class="checkbox">
+											<label><input type="checkbox" value="" required>I have read and accept the
+												terms and conditions</label>
+
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="pf-c pf-c-xs--12 pf-c-sm--12 pf-c-md--12 pf-c-lg--12" style="padding: 5px;">
-								<div class="pf-55ddfcba sc-fONwsr BcUQo" data-pf-type="Column">
-									<div class="pf-4f88b0d6 sc-iyvyFf gJXqlU" data-pf-type="Block"><i
-											class="pf-fe9ce02f fa fa-support sc-eMigcr lgHsl" data-pf-type="Icon"></i>
-										<div class="pf-25d0a41d sc-iyvyFf gJXqlU" data-pf-type="Block">
-											<h3 mode="view" class="pf-08c46d81 sc-gwVKww jSNcIx" data-pf-type="Heading">
-												<span class="pf-6d28e091 sc-RcBXQ uIbp" data-pf-type="Text">External
-													Links<br></span></h3>
-											<p class="pf-93ff5a59 sc-ebFjAB bLbPLR" data-pf-type="Paragraph"><span
-													class="pf-1f6abd78 sc-RcBXQ uIbp" data-pf-type="Text">External
-													links
-													may be provided for your convenience, but they are beyond the
-													control of the Website Owner and no representation is made as to
-													their content. Use or reliance on any external links and the
-													content
-													thereon provided is at your own risk. When visiting external
-													links
-													you must refer to that external websites terms and conditions of
-													use. No hypertext links shall be created from any website
-													controlled
-													by you or otherwise to this website without the express prior
-													written permission of the Website Owner. Please contact us if
-													you
-													would like to link to this website or would like to request a
-													link
-													to your website.</span></p>
-										</div>
-									</div>
+							<div class="row">
+								<div class="col-md-12">
+									<p><a href="order-complete.html" class="btn btn-primary">Place an order</a></p>
 								</div>
 							</div>
-							<div class="pf-c pf-c-xs--12 pf-c-sm--12 pf-c-md--12 pf-c-lg--12" style="padding: 5px;">
-								<div class="pf-4a354da4 sc-fONwsr BcUQo" data-pf-type="Column">
-									<div class="pf-7c742168 sc-iyvyFf gJXqlU" data-pf-type="Block"><i
-											class="pf-ac92052d fa fa-truck sc-eMigcr lgHsl" data-pf-type="Icon"></i>
-										<div class="pf-4c0a741f sc-iyvyFf gJXqlU" data-pf-type="Block">
-											<h3 mode="view" class="pf-8016973b sc-gwVKww jSNcIx" data-pf-type="Heading">
-												<span class="pf-c6db3689 sc-RcBXQ uIbp" data-pf-type="Text">Specific
-													Use<br></span></h3>
-											<p class="pf-995078e6 sc-ebFjAB bLbPLR" data-pf-type="Paragraph"><span
-													class="pf-a2f9f387 sc-RcBXQ uIbp" data-pf-type="Text">You
-													further
-													agree not to use the website to send or post any message or
-													material
-													that is unlawful, harassing, defamatory, abusive, indecent,
-													threatening, harmful, vulgar, obscene, sexually orientated,
-													racially
-													offensive, profane, pornographic or violates any applicable law
-													and
-													you hereby indemnify the Website Owner against any loss,
-													liability,
-													damage or expense of whatever nature which the Website Owner or
-													any
-													third party may suffer which is caused by or attributable to,
-													whether directly or indirectly, your use of the website to send
-													or
-													post any such message or material.</span></p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="pf-c pf-c-xs--12 pf-c-sm--12 pf-c-md--12 pf-c-lg--12" style="padding: 5px;">
-								<div class="pf-4a354da4 sc-fONwsr BcUQo" data-pf-type="Column">
-									<div class="pf-7c742168 sc-iyvyFf gJXqlU" data-pf-type="Block"><i
-											class="pf-ac92052d fa fa-truck sc-eMigcr lgHsl" data-pf-type="Icon"></i>
-										<div class="pf-4c0a741f sc-iyvyFf gJXqlU" data-pf-type="Block">
-											<h3 mode="view" class="pf-8016973b sc-gwVKww jSNcIx" data-pf-type="Heading">
-												<span class="pf-c6db3689 sc-RcBXQ uIbp" data-pf-type="Text">Warranties
-												</span></h3>
-											<p class="pf-995078e6 sc-ebFjAB bLbPLR" data-pf-type="Paragraph"><span
-													class="pf-a2f9f387 sc-RcBXQ uIbp" data-pf-type="Text">The
-													Website
-													Owner makes no warranties, representations, statements or
-													guarantees
-													(whether express, implied in law or residual) regarding the
-													website,
-													the information contained on the website, your or your company's
-													personal information or material and information transmitted
-													over
-													our system.</span></p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="pf-c pf-c-xs--12 pf-c-sm--12 pf-c-md--12 pf-c-lg--12" style="padding: 5px;">
-								<div class="pf-4a354da4 sc-fONwsr BcUQo" data-pf-type="Column">
-									<div class="pf-7c742168 sc-iyvyFf gJXqlU" data-pf-type="Block"><i
-											class="pf-ac92052d fa fa-truck sc-eMigcr lgHsl" data-pf-type="Icon"></i>
-										<div class="pf-4c0a741f sc-iyvyFf gJXqlU" data-pf-type="Block">
-											<h3 mode="view" class="pf-8016973b sc-gwVKww jSNcIx" data-pf-type="Heading">
-												<span class="pf-c6db3689 sc-RcBXQ uIbp" data-pf-type="Text">Disclaimer
-													of Liability<br> </span></h3>
-											<p class="pf-995078e6 sc-ebFjAB bLbPLR" data-pf-type="Paragraph"><span
-													class="pf-a2f9f387 sc-RcBXQ uIbp" data-pf-type="Text">The
-													Website
-													Owner shall not be responsible for and disclaims all liability
-													for
-													any loss, liability, damage (whether direct, indirect or
-													consequential), personal injury or expense of any nature
-													whatsoever
-													which may be suffered by you or any third party (including your
-													company), as a result of or which may be attributable, directly
-													or
-													indirectly, to your access and use of the website, any
-													information
-													contained on the website, your or your company's personal
-													information or material and information transmitted over our
-													system.
-													In particular, neither the Website Owner nor any third party or
-													data
-													or content provider shall be liable in any way to you or to any
-													other person, firm or corporation whatsoever for any loss,
-													liability, damage (whether direct or consequential), personal
-													injury
-													or expense of any nature whatsoever arising from any delays,
-													inaccuracies, errors in, or omission of any share price
-													information
-													or the transmission thereof, or for any actions taken in
-													reliance
-													thereon or occasioned thereby or by reason of non-performance or
-													interruption, or termination thereof.</span></p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="pf-c pf-c-xs--12 pf-c-sm--12 pf-c-md--12 pf-c-lg--12" style="padding: 5px;">
-								<div class="pf-4a354da4 sc-fONwsr BcUQo" data-pf-type="Column">
-									<div class="pf-7c742168 sc-iyvyFf gJXqlU" data-pf-type="Block"><i
-											class="pf-ac92052d fa fa-truck sc-eMigcr lgHsl" data-pf-type="Icon"></i>
-										<div class="pf-4c0a741f sc-iyvyFf gJXqlU" data-pf-type="Block">
-											<h3 mode="view" class="pf-8016973b sc-gwVKww jSNcIx" data-pf-type="Heading">
-												<span class="pf-c6db3689 sc-RcBXQ uIbp" data-pf-type="Text">Use of
-													the
-													Website<br></span></h3>
-											<p class="pf-995078e6 sc-ebFjAB bLbPLR" data-pf-type="Paragraph"><span
-													class="pf-a2f9f387 sc-RcBXQ uIbp" data-pf-type="Text">The
-													Website
-													Owner does not make any warranty or representation that
-													information
-													on the website is appropriate for use in any jurisdiction (other
-													than Great Britain ). By accessing the website, you warrant and
-													represent to the Website Owner that you are legally entitled to
-													do
-													so and to make use of information made available via the
-													website.
-
-												</span></p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-
 						</div>
 					</div>
 				</div>
-
-
-
 			</div>
+
+
+
+
+
 
 			<footer id="colorlib-footer" role="contentinfo" style="background-color: #03254c;">
 				<div class="container">
@@ -474,7 +433,6 @@
 									Sarasavi Bookshop (pvt) Ltd by
 									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
 							</p>
-
 						</div>
 					</div>
 				</div>
@@ -487,6 +445,10 @@
 						class="fa fa-arrow-up "></i></a>
 			</div>
 
+		</div>
+
+		<div class="gototop js-top">
+			<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
 		</div>
 
 		<!-- jQuery -->
@@ -509,7 +471,26 @@
 		<!-- Stellar Parallax -->
 		<script src="js/jquery.stellar.min.js"></script>
 		<!-- Main -->
-		<script src="js/main.js"></script>
+        <script src="js/main.js"></script>
+        
+        <script>
+
+            const placeOrder = e => {
+              let formData = {
+                shipfname: document.getElementById('shipfname').value,
+                shiplname: document.getElementById('shiplname').value,
+                email: document.getElementById('email').value,
+                shipAddressOne: document.getElementById('shipAddressOne').value,
+                shipAddressTwo: document.getElementById('shipAddressTwo').value,
+                shipPhone: document.getElementById('password2').value
+               
+              }
+              localStorage.setItem('formData',JSON.stringify(formData));
+              console.log(localStorage.getItem('formData'));
+              e.preventDefault();
+            }
+    
+        </script>
 		</script>
 
 </body>
